@@ -1,0 +1,14 @@
+[project]
+name = "langgraph-class"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.2.15",
+    "langchain-google-genai>=4.2.2",
+    "langchain-google-vertexai>=3.2.2",
+    "langgraph>=1.1.8",
+    "python-dotenv>=1.2.2",
+    "tavily-python>=0.7.23",
+]
