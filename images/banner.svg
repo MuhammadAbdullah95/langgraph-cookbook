@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" role="img" aria-label="LangGraph Cookbook — 6 agentic design patterns plus Agentic RAG">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" role="img" aria-label="LangGraph Cookbook — six agentic design patterns plus Agentic RAG">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0F2727"/>
@@ -9,8 +9,8 @@
       <stop offset="0%" stop-color="#5EE6B5"/>
       <stop offset="100%" stop-color="#2A9D8F"/>
     </linearGradient>
-    <radialGradient id="glow" cx="80%" cy="40%" r="55%">
-      <stop offset="0%" stop-color="#5EE6B5" stop-opacity="0.18"/>
+    <radialGradient id="glow" cx="85%" cy="50%" r="42%">
+      <stop offset="0%" stop-color="#5EE6B5" stop-opacity="0.16"/>
       <stop offset="100%" stop-color="#5EE6B5" stop-opacity="0"/>
     </radialGradient>
   </defs>
@@ -19,42 +19,44 @@
   <rect width="1280" height="360" fill="url(#bg)"/>
   <rect width="1280" height="360" fill="url(#glow)"/>
 
-  <!-- left content -->
+  <!-- TEXT COLUMN — kept inside x = 64 .. 820 -->
   <g font-family="ui-sans-serif, -apple-system, 'Segoe UI', Inter, system-ui, sans-serif" fill="#FFFFFF">
-    <text x="80" y="118" font-size="22" font-weight="600" letter-spacing="6" fill="#5EE6B5" opacity="0.85">LANGGRAPH · COOKBOOK</text>
-    <text x="80" y="200" font-size="76" font-weight="800" letter-spacing="-1.5">Build Real Agents.</text>
-    <text x="80" y="260" font-size="34" font-weight="500" fill="#C7E9DD">Six agentic design patterns &#183; Agentic RAG &#183; Runnable notebooks</text>
-    <text x="80" y="306" font-size="20" font-weight="400" fill="#8FB7AB">A practical companion to the official LangChain docs.</text>
+    <text x="64" y="96" font-size="20" font-weight="600" letter-spacing="6" fill="#5EE6B5" opacity="0.85">A LANGGRAPH COOKBOOK</text>
+    <text x="64" y="186" font-size="74" font-weight="800" letter-spacing="-1.5">Build Real Agents.</text>
+    <text x="64" y="232" font-size="28" font-weight="500" fill="#C7E9DD">6 agentic design patterns &#183; Agentic RAG</text>
+    <text x="64" y="270" font-size="20" font-weight="400" fill="#8FB7AB">Runnable notebooks &#183; plain-language explanations</text>
+    <text x="64" y="314" font-size="16" font-weight="400" fill="#6B9890" opacity="0.85">A practical companion to the official LangChain docs.</text>
   </g>
 
-  <!-- right-side graph motif: 6 connected nodes representing the 6 patterns -->
-  <g transform="translate(820, 80)" fill="none" stroke="#5EE6B5" stroke-width="2.5" opacity="0.85">
-    <!-- edges (drawn first so nodes overlap them) -->
-    <line x1="60"  y1="100" x2="180" y2="40"  opacity="0.45"/>
-    <line x1="60"  y1="100" x2="180" y2="160" opacity="0.45"/>
-    <line x1="180" y1="40"  x2="300" y2="100" opacity="0.45"/>
-    <line x1="180" y1="160" x2="300" y2="100" opacity="0.45"/>
-    <line x1="300" y1="100" x2="420" y2="40"  opacity="0.45"/>
-    <line x1="300" y1="100" x2="420" y2="160" opacity="0.45"/>
-    <!-- self-loop on last node = the "agent" -->
-    <path d="M 420 40 a 28 28 0 1 1 0.01 0" opacity="0.6"/>
+  <!-- GRAPH MOTIF — contained in the right column x = 900 .. 1216, no overlap with text -->
+  <g transform="translate(920, 96)" fill="none" stroke="#5EE6B5" stroke-width="2.4" opacity="0.9">
+    <!-- edges first so node fills sit on top -->
+    <line x1="40"  y1="84"  x2="140" y2="30"  opacity="0.45"/>
+    <line x1="40"  y1="84"  x2="140" y2="138" opacity="0.45"/>
+    <line x1="140" y1="30"  x2="240" y2="84"  opacity="0.45"/>
+    <line x1="140" y1="138" x2="240" y2="84"  opacity="0.45"/>
+    <line x1="240" y1="84"  x2="340" y2="138" opacity="0.45"/>
+    <line x1="240" y1="84"  x2="340" y2="30"  opacity="0.45"/>
+    <!-- self-loop on the agent node -->
+    <path d="M 358 18 a 18 18 0 1 1 -0.01 0" opacity="0.55"/>
 
-    <!-- nodes -->
-    <g fill="#0F2727" stroke="url(#accent)" stroke-width="3">
-      <circle cx="60"  cy="100" r="22"/>
-      <circle cx="180" cy="40"  r="22"/>
-      <circle cx="180" cy="160" r="22"/>
-      <circle cx="300" cy="100" r="22"/>
-      <circle cx="420" cy="40"  r="22"/>
-      <circle cx="420" cy="160" r="22"/>
+    <!-- nodes (outer ring) -->
+    <g fill="#0F2727" stroke="url(#accent)" stroke-width="2.6">
+      <circle cx="40"  cy="84"  r="18"/>
+      <circle cx="140" cy="30"  r="18"/>
+      <circle cx="140" cy="138" r="18"/>
+      <circle cx="240" cy="84"  r="18"/>
+      <circle cx="340" cy="30"  r="18"/>
+      <circle cx="340" cy="138" r="18"/>
     </g>
-    <g fill="#5EE6B5">
-      <circle cx="60"  cy="100" r="6"/>
-      <circle cx="180" cy="40"  r="6"/>
-      <circle cx="180" cy="160" r="6"/>
-      <circle cx="300" cy="100" r="6"/>
-      <circle cx="420" cy="40"  r="6"/>
-      <circle cx="420" cy="160" r="6"/>
+    <!-- node centers -->
+    <g fill="#5EE6B5" stroke="none">
+      <circle cx="40"  cy="84"  r="5"/>
+      <circle cx="140" cy="30"  r="5"/>
+      <circle cx="140" cy="138" r="5"/>
+      <circle cx="240" cy="84"  r="5"/>
+      <circle cx="340" cy="30"  r="5"/>
+      <circle cx="340" cy="138" r="5"/>
     </g>
   </g>
 
