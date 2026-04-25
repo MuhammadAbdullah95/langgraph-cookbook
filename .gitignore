@@ -1,3 +1,8 @@
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
 # Python-generated files
 __pycache__/
 *.py[oc]
@@ -8,4 +13,34 @@ wheels/
 
 # Virtual environments
 .venv
-.env
+venv/
+env/
+ENV/
+
+# uv
+.uv-cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Tests / coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.AppleDouble
+Thumbs.db
+
+# Local Qdrant data (if you persist it locally)
+qdrant_storage/
